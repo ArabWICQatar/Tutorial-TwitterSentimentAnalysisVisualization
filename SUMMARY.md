@@ -1,3 +1,8 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [Data Collection from Twitter](chapter1.md)
+* [Preprocessing](preprocessing.md)
+* Sentiment Analysis using TextBlob
+* Visualization using Highcharts
+
