@@ -22,9 +22,7 @@ alltweets.writerow([created_at, tweet_id, tweet_text, retweet, fav])
 
 Add this code to the searchTweets.py for gathering this information while collecting tweets.
 
-
-
-Useful Resources:
+### 
 
 
 
