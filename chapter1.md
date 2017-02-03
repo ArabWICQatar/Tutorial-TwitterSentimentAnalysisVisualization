@@ -12,7 +12,7 @@ We will now create a Twitter app to get authentication details and establish con
 
 3. Click on “Create new App”
 
-4. Fill in Application Details. Note that website url should start with http://
+4. Fill in Application Details. Note that the website url in application details should start with http://
 
 5. Click on “Create your Twitter application”. You will be redirected to your new app.
 
