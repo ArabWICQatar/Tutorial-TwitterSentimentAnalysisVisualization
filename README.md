@@ -16,11 +16,8 @@ This project will concentrate on Sentiment Analysis and Visualization of Twitter
 
 1. Read the tutorial chapter by chapter, as each chapter will explain a module of Twitter Sentiment Analysis and Visualization2.
 
-2. The steps written in the following format:
-
-> _**These are action steps for you to do.**_
-
-3. You can download the entire project code from the following [github repository](https://www.gitbook.com/book/wafawaheedas/twitter-sentiment-analysis-visualization-tutorial/edit#) and you can choose to follow the tutorial steps or use the files from cloned github repository instead of creating new files.
+2. > The steps written in the following format: _**These are action steps for you to do.**_
+3. You can download the entire project code from the following [github repository](https://www.gitbook.com/book/wafawaheedas/twitter-sentiment-analysis-visualization-tutorial/edit#) and you can choose to follow the tutorial steps or follow the tutorial using the files from cloned github repository instead of creating new files.
 
 ### **Requirements**
 
