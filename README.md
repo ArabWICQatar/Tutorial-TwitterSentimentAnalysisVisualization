@@ -22,11 +22,11 @@ Python modules: Tweepy & TextBlob
 
 **INSTALLING PYTHON:**
 
-For Windows, go to[https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)and click onDownload and install Python 2.7.13, the latest version.Be sure to check on add path to environment variable while installing.
+For Windows, go to [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/) and click onDownload and install Python 2.7.13, the latest version.Be sure to check on add path to environment variable while installing.
 
-For Mac OSx, got to[https://www.python.org/downloads/mac-osx/](https://www.python.org/downloads/mac-osx/)scroll and download thePython 2.7.13, latest version.
+For Mac OSx, go to [https://www.python.org/downloads/mac-osx/](https://www.python.org/downloads/mac-osx/) scroll and download thePython 2.7.13, latest version.
 
-For Linux, Ubuntu, download and install the python2.x package from[https://www.python.org/downloads/source/](https://www.python.org/downloads/source/).
+For Linux, Ubuntu, download and install the python2.x package from [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/).
 
 ![](https://lh5.googleusercontent.com/9HmanYIO54GaBn9H8miTWI_vDQ-xmjkUrWbgZntYmvr7wdF85sV3vmxq8-qPWwsuqsd9G7qiI36688AanC3cvem1AExsXk7UEzXeKiME9iWUb168c5DZrTGVNoSyETWcZqWBmu7L)
 
