@@ -101,19 +101,62 @@ Find the [hashtag-keywords.txt file here](https://github.com/ArabWICQatar/Twitte
 
 * #### **Code**
 
-This python script establishes connection with Twitter and searches for tweets containing keywords and hashtags from keywords.txt file. The function search in python script is written to perform search and gather all tweets in a csv file searchTweets.csv.
+This python script establishes connection with Twitter and searches for tweets containing keywords and hashtags from keywords.txt file. The function search in python script is written to perform search and gather all tweets in a csv file searchTweets.csv. 
 
-> _**Save the below script as searchTweets.py in your project folder, edit to add your Twitter app credientials and Run**_
-
-    
-
+> _**Save the script as searchTweets.py in your project folder, edit to add your Twitter app credientials and Run**_
 
 You will see the output searchTweets.csv file saved inside search-data folder.
 
-| import tweepyimport sysimport csv \# to force utf-8 encoding on entire programreload\(sys\)sys.setdefaultencoding\('utf8'\) \# to write all tweets in a csv filealltweets = csv.writer\(open\("search-data/searchTweets.csv", 'ab'\)\) def search\(keywords\):access\_key = "your app access key here"access\_secret = "your app access token here"consumer\_key = "your app consumer key here"consumer\_secret = "your app consumer secret here"\#to authenticateauth = tweepy.OAuthHandler\(consumer\_key, consumer\_secret\)auth.set\_access\_token\(access\_key, access\_secret\)api = tweepy.API\(auth\)  count = 1;for tweet in api.search\(keywords,'en', count = 100\):created\_at = tweet.created\_attweet\_id = tweet.id\_strtweet\_text = tweet.textprint "gathered tweet ",countcount = count + 1alltweets.writerow\(\[created\_at, tweet\_id, tweet\_text\]\) \#search\("Qatar Airways"\) \# to search one keyword at a time file = open\('keywords.txt', 'r'\) \# contains a list of keywordsqueries = file.readlines\(\) for q in queries:\# read one keyword at a timeprint "----"print qsearch\(q\) |
-| :--- |
+_You can also find the script file inside your project folder._
 
+```py
+'''
+To authenticate and connect with Twitter
+Use search REST API to gather tweets from a list of keywords
+Store tweets as a csv file
+'''
 
-    
+import tweepy
+import sys
+import csv
+
+# to force utf-8 encoding on entire program
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+alltweets = csv.writer(open("search-data/searchTweets.csv", 'ab'))
+
+def search(keywords):
+    access_key = "your app access key here"
+    access_secret = "your app access token here"
+    consumer_key = "your app consumer key here"
+    consumer_secret = "your app consumer secret here"
+
+    #to authenticate
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_key, access_secret)
+    api = tweepy.API(auth)
+
+    count = 1;
+    for tweet in api.search(keywords,'en', count = 100):
+        created_at =  tweet.created_at  # accessing tweet time
+        tweet_id = tweet.id_str         # accessing tweet id
+        tweet_text = tweet.text         # accessing tweet text
+        print "gathered tweet ",count
+        count = count + 1
+        alltweets.writerow([created_at, tweet_id, tweet_text])
+
+#search("Qatar Airways") # to search one keyword at a time
+
+file = open('hashtags-keywords.txt', 'r') # contains a list of keywords
+queries = file.readlines()
+
+for q in queries:
+    # read one keyword at a time
+    print "----"
+    print q
+    search(q)
+```
+
 
 
