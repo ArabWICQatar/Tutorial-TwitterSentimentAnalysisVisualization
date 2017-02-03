@@ -36,17 +36,13 @@ def scrapTweets(airline):
     print "# of rows", count
 
 scrapTweets("qatarairways") # replace with emirates and etihadairways and run this script again
-
 ```
 
-  
-Now we need to calculate the number of tweets which were positive, negative and neutral for each airline. This is to find the statistics of the sentiment results generated.  
-
+Now we need to calculate the number of tweets which were positive, negative and neutral for each airline. This is to find the statistics of the sentiment results generated.
 
 > _**Save the following script as computeResults.py and run the script to compute results.**_
 
-The script when executed, generates results.csv, containing total, positive, negative and neutral number of tweets for each airline.  
-
+The script when executed, generates results.csv, containing total, positive, negative and neutral number of tweets for each airline.
 
 ```py
 '''
@@ -83,14 +79,11 @@ results = csv.writer(open("search-data/results.csv", "wb"))
 getStats("qatar", qatarTweets)
 getStats("emirates", emirateTweets)
 getStats("etihad", etihadTweets)
-
 ```
 
 The results.csv will have the data in following format:
 
-![](https://lh4.googleusercontent.com/z3Aieg-v061Au-qod_7lCt7vJbG0c9JnkCQleZ_ilQ-S01zmAzG1U8bgNnIYSopR9MeoWW0jzKz8WdLva0AV2JZnBBhMcJfxU_AwxbRdWEAzabBtVoS6N-G-6LctJTFCBDJNvcrc)
-
-
+![](/assets/csv-sample.png)
 
 #### 2. Visualizing sentiment results using Highcharts
 
@@ -108,16 +101,11 @@ Now to visualize the results, we use Highcharts javascript library. Highcharts h
 >
 > **Locate the results.html file and double-click on the results.html file to execute it using your desired browser.**
 
-
-
 You will see a column bar chart like below in your browser:
 
-![](/assets/2-1.png)
+![](/assets/output.png)
 
 ### And that should be it! Congrats :\)
 
-
-
-  
 
 
