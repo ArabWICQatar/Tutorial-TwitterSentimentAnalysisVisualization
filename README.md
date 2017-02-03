@@ -75,7 +75,7 @@ Open Terminal and type the following command. \(Type sudo at the beginning of ad
 
 `pip install -U pip`
 
-Now the tweepy and textblob python modules are downloaded, we will use tweepy for authenticating and connecting with Twitter, to collect tweets and TextBlob for performing sentiment analysis. TextBlob is used for many other NLP use-cases such as parts-of-speech tagging, one of the popular usage is sentiment analysis.
+Now the [tweepy](http://docs.tweepy.org/en/v3.5.0/) and [textblob](https://textblob.readthedocs.io/en/dev/) python modules are downloaded, we will use tweepy for authenticating and connecting with Twitter, to collect tweets and TextBlob for performing sentiment analysis. TextBlob is used for many other NLP use-cases such as parts-of-speech tagging, one of the popular usage is sentiment analysis.
 
 Type the following commands one after the other, in your command prompt or terminal to install the python libraries.
 

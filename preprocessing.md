@@ -6,7 +6,6 @@ The gathered tweets might contain duplicates, as it is very likely that a tweet 
 
 > _**Save the below script as remDupTweets.py in your project folder and Run the script**_
 
-  
 You will see the output saved as uniqueSearchTweets.csv inside the search-data folder.
 
 ```py
@@ -24,16 +23,17 @@ noDup = csv.writer(open("search-data/uniqueSearchTweets.csv", "wb")) # store uni
 tweets = set()
 i = 0;
 for row in alltweets:
-	i = i + 1
-	# print i
-	if row[2] not in tweets:
-		t = row[2].lower()
-		t = t.replace('\n', '')
-		noDup.writerow([row[0], row[1], t])
-		# print "writing row.."
-		tweets.add( row[2] )
-
+    i = i + 1
+    # print i
+    if row[2] not in tweets:
+        t = row[2].lower()
+        t = t.replace('\n', '')
+        noDup.writerow([row[0], row[1], t])
+        # print "writing row.."
+        tweets.add( row[2] )
 ```
 
+We will now find sentiment analysis for the preprocessed unique tweets.
 
+_Get started with _[_Sentiment Analysis using TextBlob_](/sentiment-analysis-using-textblob.md)_._
 

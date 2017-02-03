@@ -6,11 +6,11 @@
 
 2. Find the popularity for the collected dataset based on the retweets and fav count.
 
-3. Visualize the results using highcharts.  
+3. Visualize the results using highcharts.
 
 HINT:
 
-Connect with twitter and parse the json response obtained. 
+Connect with twitter and parse the json response obtained.
 
 Find and extract more tweet properties - such as retweets and fav counts.
 
@@ -21,4 +21,10 @@ alltweets.writerow([created_at, tweet_id, tweet_text, retweet, fav])
 ```
 
 Add this code to the searchTweets.py for gathering this information while collecting tweets.
+
+
+
+Useful Resources:
+
+
 

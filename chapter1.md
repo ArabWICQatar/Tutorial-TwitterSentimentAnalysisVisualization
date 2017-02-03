@@ -101,7 +101,7 @@ Find the [hashtag-keywords.txt file here](https://github.com/ArabWICQatar/Twitte
 
 * #### **Code**
 
-This python script establishes connection with Twitter and searches for tweets containing keywords and hashtags from keywords.txt file. The function search in python script is written to perform search and gather all tweets in a csv file searchTweets.csv. 
+This python script establishes connection with Twitter and searches for tweets containing keywords and hashtags from keywords.txt file. The function search in python script is written to perform search and gather all tweets in a csv file searchTweets.csv.
 
 > _**Save the script as searchTweets.py in your project folder, edit to add your Twitter app credientials and Run**_
 
@@ -158,5 +158,7 @@ for q in queries:
     search(q)
 ```
 
+The collected data will have many duplicates, as a same tweet can be retweeted several times.
 
+_Get started with the _[_Preprocessing_](/preprocessing.md)_._
 

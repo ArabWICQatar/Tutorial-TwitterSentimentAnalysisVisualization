@@ -2,8 +2,7 @@
 
 TextBlob is a python API which is well known for different applications like Parts-of-Speech, Tokenization, Noun-phrase extraction, Sentiment analysis etc. We will use TextBlob for sentiment analysis, by feeding the unique tweets and obtaining the sentiment polarity as output. More on sentiment analysis using TextBlob can be found[here](http://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis).
 
-On executing the below python script: the sentimentUniqueTweets.csv will have the sentiment polarity score and the corresponding sentiment, as the polarity value ranges between \[-1, 1\]. So a tweet has Positive sentiment when it’s polarity is greater than 0 and negative sentiment when it’s polarity is lesser than 0. When the sentiment polarity is exactly 0 the tweet is said to have neutral polarity.  
-
+On executing the below python script: the sentimentUniqueTweets.csv will have the sentiment polarity score and the corresponding sentiment, as the polarity value ranges between \[-1, 1\]. So a tweet has Positive sentiment when it’s polarity is greater than 0 and negative sentiment when it’s polarity is lesser than 0. When the sentiment polarity is exactly 0 the tweet is said to have neutral polarity.
 
 > _**Save the below script as sentiment.py in your project folder and Run the script**_
 
@@ -34,8 +33,9 @@ for row in alltweets:
         sntTweets.writerow([row[0], row[1], row[2], blob.sentiment.polarity, "negative"])
     elif blob.sentiment.polarity == 0.0:
         sntTweets.writerow([row[0], row[1], row[2], blob.sentiment.polarity, "neutral"])
-
 ```
 
+We now have sentiment generated for all unique tweets. 
 
+_Let's get started with the _[_Visualizing_](/visualization-using-highcharts.md)_ the results._
 
