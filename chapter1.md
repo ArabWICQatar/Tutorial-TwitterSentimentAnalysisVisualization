@@ -62,9 +62,11 @@ Using the code snippet below, you can receive one tweet response and understand 
 >
 > #to authenticate
 > auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-> auth.set_access_token(access_key, access_secret)api = tweepy.API(auth)
+> auth.set_access_token(access_key, access_secret)
+> api = tweepy.API(auth)
 > for tweet in api.search('Qatar','en',count = 5):
->     print tweetprint "*****end of one tweet*****"
+>     print tweet
+>     print "*****end of one tweet*****"
 > ```
 
 JSON response for a tweet will look like below. The tweet properties we need such as text, id are highlighted.
