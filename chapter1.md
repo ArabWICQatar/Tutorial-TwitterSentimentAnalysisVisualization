@@ -22,9 +22,7 @@ We will now create a Twitter app to get authentication details and establish con
 
 8. Copy paste your Consumer Key \(API Key\), Consumer Secret \(API Secret\), Access Token and Access Token Secret in a txt file, as we will be using these details to connect with Twitter in the next steps.
 
-For more details - View the following image.
-
-### **Collecting tweets for specific hashtags or topics**
+**Collecting tweets for specific hashtags or topics**
 
 We’ll now see how to authenticate and connect with Twitter using Tweepy.
 
