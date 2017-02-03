@@ -6,7 +6,7 @@
 
 Perform Sentiment analysis and visualization on tweets to compare and contrast events or topics on Twitter. Analyzing the sentiment of three popular Airlines of Middle East: Qatar Airways, Emirates and Etihad is the objective of this project.
 
-### **Purpose & Overview**
+### **Overview**
 
 This tutorial is a Do It Yourself project, organised as a part of the Women in Data Science Qatar event. The tutorial is self paced with sufficient explanations and further references under each module. Code for the project can also be found in the [github repository](https://github.com/ArabWICQatar/TwitterSentimentAnalysisVisualization).
 
