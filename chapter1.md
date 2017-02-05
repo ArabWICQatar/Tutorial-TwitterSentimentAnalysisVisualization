@@ -31,8 +31,10 @@ We’ll now see how to authenticate and connect with Twitter using Tweepy.
 We will use Tweepy - a Twitter-Python Library for authenticating and connecting with Twitter. The tweepy.OAuthHandler authenticates your app and establishes connection using the access token as shown below:
 
 > ```py
-> import tweepyauth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-> auth.set_access_token(access_key, access_secret)api = tweepy.API(auth)
+> import tweepy
+> auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+> auth.set_access_token(access_key, access_secret)
+> api = tweepy.API(auth)
 > ```
 
 _This code snippet is for understanding only._
